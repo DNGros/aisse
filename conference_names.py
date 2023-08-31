@@ -403,12 +403,23 @@ def get_ist_names():
     return df.venue
 
 
+def get_tosem_names():
+    df = get_venues_df()
+    df = df[df['venue'].notna()]
+    df = df[df['venue'].str.contains("Transactions on Software Engineering and Methodology", case=False)]
+    with pd.option_context(*display_settings):
+        print(df)
+        print(df['corpusid'].sum())
+    return df.venue
+
+
 def get_se_journal_names():
     return [
         *get_tse_names(),
         *get_jss_names(),
         *get_ist_names(),
         *get_ese_names(),
+        *get_tosem_names(),
     ]
 
 
@@ -507,8 +518,10 @@ def get_unkown_names():
 
 
 def main():
-    se_conference_names = get_se_conference_names()
-    print(se_conference_names)
+    #se_conference_names = get_se_conference_names()
+    #print(se_conference_names)
+    se_journal_names = get_se_journal_names()
+    print(se_journal_names)
 
 
 if __name__ == "__main__":
