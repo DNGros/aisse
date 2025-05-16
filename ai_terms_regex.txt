@@ -1,32 +1,3 @@
-# A case insensitive regex. Intended to just give an approximation if paper about AI/ML/DL. Started with initial list of terms and then mannually skimmed through papers list to look to see if missing terms.
-
-\bAI\b
-|\bArtificial Intelligence\b
-|\bMachine Learning\b
-|\bDeep Learning\b
-|\bNeural\b
-|\bML\b
-|\bDL\b
-|\btransformer\b
-|\bLanguage Model\b
-|\bSVM\b
-|\bSupport Vector Machine\b
-|\bRandom Forest\b
-|\bSimulated Annealing\b
-|\bDNN\b
-|\bRL\b
-|\bReinforcement Learning\b
-|\bbots\b
-|\bnaive bayes\b
-|deep ?learn
-|pre-?train
-|model generate
-|few.?shot
-|zero.?shot
-|gradient boost
-|boosting
-|conditional random field
-|bayesian network
 \bAI\b
 |\bArtificial Intelligence\b
 |\bMachine Learning\b
